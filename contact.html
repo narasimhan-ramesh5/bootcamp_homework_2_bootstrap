@@ -1,0 +1,64 @@
+<html>
+  <head>
+      <title>Narasimhan Ramesh</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <link rel="stylesheet" href="styles/style.css">
+      <script type="text/javascript" src="scripts/contact.js"></script>
+  </head>
+  <body>
+
+    <!-- The portfolio page's header section. -->
+    <!-- This contains a logo on the left and links on the right -->
+    <div class="container-fluid portfolio-header">
+
+      <div class="row">
+        <!-- Logo -->
+        <div class="col-md-2 offset-md-1 portfolio-logo">
+          Ramesh N
+        </div>
+
+        <!-- Navigation bar with links -->
+        <div class="col-md-3 offset-md-5 portfolio-links">
+          <a href="index.html">About</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+
+    </div>
+    
+    <!-- The main body of the contact page. -->
+    <!-- Contains tex boxes for name, email address and message. -->
+    <div class="container-fluid portfolio-body">
+      <div class="col-md-8 offset-md-2 bio">
+        <h4 align="center">Contact Me</h4>
+
+        <form onsubmit="process_form()">
+
+          <div class="form-group">
+            <label for="exampleInputPassword1">Name</label>
+            <input type="text" class="form-control" id="fullname" required>
+          </div>
+
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Message</label>
+            <textarea class="form-control" id="contact_message" rows="3"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-teal">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>&copy;&nbsp;Narasimhan Ramesh</p>
+    </div>
+
+  </body>
+</html>
